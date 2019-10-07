@@ -9,8 +9,5 @@ public class NoArgConstructor {
     public void callingMemberMethod() {
         System.out.println("method called ");
     }
-    public NoArgConstructor(String args) {
-
-    }
 
 }
