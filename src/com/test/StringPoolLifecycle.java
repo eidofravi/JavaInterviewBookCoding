@@ -14,8 +14,8 @@ public class StringPoolLifecycle {
     public static void main(String[] args) {
         new StringPoolLifecycle().callMethodOne();
         String str4= "HelloEveryOne111";
-        List<StringLifecycle> lst = new ArrayList<>();
-        lst.add(new StringLifecycle(str4));
+        List<StringPoolLifecycle> lst = new ArrayList<>();
+        lst.add(new StringPoolLifecycle(str4));
         while(true) {}
     }
 
