@@ -1,4 +1,4 @@
-package com.coding.String;
+package com.String;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,6 @@ public class RemoveTextFromStringThird {
         System.out.println(removeCharFromText(null, "as"));
         System.out.println(removeCharFromText("as", "as"));
     }
-
     public static String removeCharFromText(String text, String removeStr) {
         if (text == null) return null;
         char[] textArr = text.toCharArray();

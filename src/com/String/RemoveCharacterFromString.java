@@ -1,4 +1,4 @@
-package com.coding.String;
+package com.String;
 
 public class RemoveCharacterFromString {
     public static void main(String[] args) {
