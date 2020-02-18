@@ -3,15 +3,14 @@ package com.cracking.queue;
 public class MyQueue {
     public static void main(String[] args) {
         CustomQueue customQueue = new CustomQueue();
+        customQueue.push(new CustomQueue.Node(10));
         customQueue.push(new CustomQueue.Node(20));
         customQueue.push(new CustomQueue.Node(30));
         customQueue.push(new CustomQueue.Node(40));
         customQueue.push(new CustomQueue.Node(50));
-        System.out.println(customQueue.pop());
+        System.out.println(customQueue.pop().data);
     }
-
 }
-
 
 class CustomQueue {
 
@@ -26,20 +25,23 @@ class CustomQueue {
         }
     }
     public void push(Node node) {
+        if (first == null) {
+            first = node;
+        }
         Node temp = last;
         node.next = temp;
         last = node;
     }
 
     public Node pop() {
-        if (null != first) {
-            while (null != first.next && first.next != last) {
-                first = first.next;
+        if (null != last) {
+            while (null != last.next && last.next != first) {
+                last = last.next;
             }
-            Node secondLast = first;
+            Node secondLast = last;
             secondLast.next = null;
         }
-        return last;
+        return first;
     }
 
 

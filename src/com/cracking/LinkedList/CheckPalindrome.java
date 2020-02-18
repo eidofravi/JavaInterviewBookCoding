@@ -15,7 +15,7 @@ public class CheckPalindrome {
         boolean value = getNode(node, node, 8);
         System.out.println("value = " + value);
     }
-x   
+
     public static boolean getNode(Node node, Node head, int count) {
         if (node.next == null) {
             return false;
