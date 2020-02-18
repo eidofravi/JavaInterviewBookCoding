@@ -19,7 +19,7 @@ public class StaticOuterDesign {
     private static class StaticExample {
         String getField() {
             //does not compile, static inner class can not access the member variable of outer class
-            return aField;
+            return "";
         }
     }
 
