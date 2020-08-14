@@ -6,13 +6,13 @@ import java.util.Stack;
 
 public class _1446ReorderRoutestToCityZero {
     public static void main(String[] args) {
-        int n = 9;
+        int n = 6;
         //int connections[][] = {{1, 0}, {2, 0}};
         // int connections[][] = {{1,0},{1,2},{3,2},{3,4}};
-        //  int connections[][] = {{0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}}; // 3
+          int connections[][] = {{0, 1}, {1, 3}, {2, 3}, {4, 0}, {4, 5}}; // 3
         // int connections[][] = {{1,0},{1,2},{2,3},{4,2}};
         //int connections[][] = {{4, 3}, {2, 3}, {1, 2}, {1, 0}}; // 2
-        int connections[][] = {{0, 1}, {2, 0}, {3, 2}}; // 1
+       // int connections[][] = {{0, 1}, {2, 0}, {3, 2}}; // 1
         int count = new _1446ReorderRoutestToCityZero().minReorder(n, connections);
         System.out.println(count);
     }
