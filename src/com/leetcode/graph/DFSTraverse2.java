@@ -6,7 +6,7 @@ import java.util.List;
 // continue from DFSTraverse1
 // how to print all node this time
 // create double sided nodes and visit node just one time if it already visited
-// just adding line no 21, reverse addition of element will print all nodes values
+// just adding line no 23, reverse addition of element will print all nodes values
 // now next question is how many nodes were redirected
 // move to class DFSTraverse3
 public class DFSTraverse2 {
